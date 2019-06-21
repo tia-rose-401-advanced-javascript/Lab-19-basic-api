@@ -7,7 +7,7 @@ const Q = require('@nmq/q/client');
 
 const app = express();
 
-app.get('/database', (response) => {
+app.get('/database', (request, response) => {
   let data = {
     name: 'read',
     message: 'This is from the get request',
@@ -17,7 +17,7 @@ app.get('/database', (response) => {
   response.send('get');
 });
 
-app.post('/database', (response) => {
+app.post('/database', (request, response) => {
   let data = {
     name: 'create',
     message: 'This is from the post request',
@@ -27,7 +27,7 @@ app.post('/database', (response) => {
   response.send('post');
 });
 
-app.put('/database', (response) => {
+app.put('/database', (request, response) => {
   let data = {
     name: 'update',
     message: 'This is from the put request',
@@ -37,7 +37,7 @@ app.put('/database', (response) => {
   response.send('put');
 });
 
-app.delete('/database', (response) => {
+app.delete('/database', (request, response) => {
   let data = {
     name: 'delete',
     message: 'This is from the delete request',
@@ -47,7 +47,7 @@ app.delete('/database', (response) => {
   response.send('delete');
 });
 
-app.use((response) => {
+app.use((request, response) => {
   let data = {
     name: 'error',
     message: 'An error has occured',
