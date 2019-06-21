@@ -6,8 +6,8 @@ Message Queue Server and Logger
 ### Author: Tia Rose
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
+* [submission PR](https://github.com/tia-rose-401-advanced-javascript/Lab-19-basic-api/pull/1)
+* [travis](https://www.travis-ci.com/tia-rose-401-advanced-javascript/Lab-19-basic-api)
 
 
 ### Modules
