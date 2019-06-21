@@ -21,11 +21,18 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - 3030
+
 
 #### Running the app
 * `npm start`
+
+*HTTPie:
+*`http GET http://localhost:3000/database`
+*`http POST http://localhost:3000/database`
+*`http PUT http://localhost:3000/database`
+*`http DELETE http://localhost:3000/database`
+
 * Endpoint: `/foo/bar/`
   * Returns a JSON object with abc in it.
 * Endpoint: `/bing/zing/`
@@ -37,4 +44,4 @@ Usage Notes or examples
 * What assertions need to be / should be made?
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML Lab 19](./assets/UML-19.JPG)
