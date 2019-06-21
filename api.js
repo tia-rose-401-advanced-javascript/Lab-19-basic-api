@@ -13,7 +13,7 @@ app.get('/database', (response) => {
     message: 'This is from the get request',
   };
 
-  Q.publish('database', 'read', data);
+  Q.publish('database', 'read', JSON.stringify(data));
   response.send('get');
 });
 
