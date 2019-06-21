@@ -1,8 +1,9 @@
-# LAB - 
+# LAB - 19
 
 ## Project Name
+Message Queue Server and Logger
 
-### Author: Student/Group Name
+### Author: Tia Rose
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
@@ -10,22 +11,16 @@
 
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
+#### `api.js`
+##### API endpoints
 
 ### Setup
 #### `.env` requirements
-* `PORT` - 3030
+* PORT=3000
 
 
 #### Running the app
-* `npm start`
+* `npm start` or node index.js
 
 *HTTPie:
 *`http GET http://localhost:3000/database`
@@ -33,13 +28,13 @@ Usage Notes or examples
 *`http PUT http://localhost:3000/database`
 *`http DELETE http://localhost:3000/database`
 
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `/database`
+  * Returns emits CRUD and error events to server
   
 #### Tests
 * How do you run tests?
+
+npm run test
 * What assertions were made?
 * What assertions need to be / should be made?
 
