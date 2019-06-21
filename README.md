@@ -9,11 +9,6 @@ Message Queue Server and Logger
 * [submission PR](https://github.com/tia-rose-401-advanced-javascript/Lab-19-basic-api/pull/1)
 * [travis](https://www.travis-ci.com/tia-rose-401-advanced-javascript/Lab-19-basic-api)
 
-
-### Modules
-#### `api.js`
-##### API endpoints
-
 ### Setup
 #### `.env` requirements
 * PORT=3000
@@ -35,8 +30,7 @@ Message Queue Server and Logger
 * How do you run tests?
 
 npm run test
-* What assertions were made?
-* What assertions need to be / should be made?
+
 
 #### UML
 ![UML Lab 19](./assets/UML-19.JPG)
