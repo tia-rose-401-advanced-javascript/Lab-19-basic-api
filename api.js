@@ -7,6 +7,10 @@ const Q = require('@nmq/q/client');
 
 const app = express();
 
+app.get('/', (request, response) => {
+  console.log('Main page');
+});
+
 app.get('/database', (request, response) => {
   let data = {
     name: 'read',
