@@ -2,4 +2,4 @@
 
 const server = require('./api');
 
-server.start(3000);
+server.start(process.env.PORT);

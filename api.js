@@ -62,7 +62,7 @@ app.use((request, response) => {
 module.exports = {
   server: app,
   start: port =>{
-    let PORT = port || process.env.PORT;
+    let PORT = process.env.PORT || port;
     app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   },
 };
