@@ -8,7 +8,7 @@ const Q = require('@nmq/q/client');
 const app = express();
 
 app.get('/', (request, response) => {
-  console.log('Main page');
+  response.send('Main Page');
 });
 
 app.get('/database', (request, response) => {
@@ -18,7 +18,7 @@ app.get('/database', (request, response) => {
   };
 
   Q.publish('database', 'read', JSON.stringify(data));
-  response.send('get');
+  response.send('In the GET request');
 });
 
 app.post('/database', (request, response) => {
@@ -28,7 +28,7 @@ app.post('/database', (request, response) => {
   };
 
   Q.publish('database', 'create', data);
-  response.send('post');
+  response.send('In the POST request');
 });
 
 app.put('/database', (request, response) => {
@@ -38,7 +38,7 @@ app.put('/database', (request, response) => {
   };
 
   Q.publish('database', 'update', data);
-  response.send('put');
+  response.send('In the PUT request');
 });
 
 app.delete('/database', (request, response) => {
@@ -48,7 +48,7 @@ app.delete('/database', (request, response) => {
   };
 
   Q.publish('database', 'delete', data);
-  response.send('delete');
+  response.send('In the DELETE request');
 });
 
 app.use((request, response) => {
